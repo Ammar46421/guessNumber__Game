@@ -18,6 +18,7 @@ const handleGuess = () => {
     if (playerGuess === randomNumber) {
         resultDisplay.style.color = 'green';
         resultDisplay.textContent = `Congratulations! You guessed the correct number: ${randomNumber}`;
+        // document.getElementById('guessInput').innerText = "";
         resetGame();
     } else {
         attempts--;
